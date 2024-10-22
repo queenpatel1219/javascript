@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n=5
+        for(let i=0; i<=n; i++){
+
+            for(let j=0; j<=i; j++){
+                document.write('*')
+                
+            }
+            // document.write('*')
+            document.write('<br>')
+        }
+        for(let i=0; i<=n; i++){
+            for(let j=0; j<=n-i; j++){
+                document.write('*')
+                
+            }
+            // document.write('*')
+            document.write('<br>')
+        } 
+
+
+        
+        for(let i=0; i<=n; i++){
+            for(let j=0; j<=i; j++){
+                
+                if(j%2 ==0){
+                    document.write('1');
+                } else{
+                    document.write('0')
+                }
+                
+            }
+            // document.write('*')
+            document.write('<br>')
+        }
+        
+        
+        for( i=0; i<=n; i++){
+            for(let j = 0; j < n; j++){
+                
+                if(i > 0 && i < n - 1 && j > 0 && j < n - 1){
+                    document.write('');
+                } else{
+                    document.write('1')
+                }
+                
+            }
+            document.write('<br>')
+        }
+
+
+
+
+        for (i = 0; i < n; i++) { 
+  
+            // loop for printing leading whitespaces 
+            for ( j = 0; j < 2 * (n - i) - 1; j++) { 
+                document.write("&nbsp"); 
+            } 
+
+            // loop for printing * character 
+            for ( k = 0; k <= i; k++) { 
+                document.write("* "); 
+            } 
+            document.write("<br>"); 
+            } 
+
+
+
+
+
+        for (i = 0; i <= n; i++) { 
+  
+            // loop for printing leading whitespaces 
+            for ( j = 5; j >= 2 * (n - i) - 1; j--) { 
+                document.write("&nbsp"); 
+            } 
+
+            // loop for printing * character 
+            for ( k = 5; k >= i; k--) { 
+                document.write("* "); 
+            } 
+            document.write("<br>"); 
+            } 
+
+
+
+
+            // x=1
+        for(r=1;r<=5;r++) {
+
+            for(c=1;c<=r;c++){
+               
+                if(r%2!=0)
+                {
+                    document.write("A")
+
+                }
+                else
+                {
+                    document.write("B")
+                }    
+            }
+            document.write("<br>")
+        }
+        
+
+
+
+        rows = 9;
+        pattern = "";
+
+            for (n=1;n<=rows;n++) {
+                if(n%2!=0){
+                    for(q=1; q<=2 * (rows - n) - 1; q++){
+                    document.write("&nbsp")
+                }
+                }
+                
+
+                for (num=1;num<=n;num++)
+                 {
+                    if(n%2!=0)
+                    {
+                        document.write(num)
+
+                    }
+                }
+                if(n%2!=0)
+                {
+                    document.write("<br>")
+                    
+                }
+            
+            }
+
+
+
+
+        
+        rows = 9;
+        pattern = "";
+
+            for (n=1;n<=rows;n++) {
+                if(n%2!=0){
+                    for(q=1; q<=2 * (rows - n) - 1; q++){
+                    document.write("&nbsp")
+                }
+                }
+                
+
+                for (num=1;num<=n;num++)
+                 {
+                    if(n%2!=0)
+                    {
+                        document.write(num)
+
+                    }
+                }
+                if(n%2!=0)
+                {
+                    document.write("<br>")
+
+                }
+            
+            }
+            
+
+               
+   
+    </script>
+</body>
+</html>

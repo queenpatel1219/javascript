@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login System</title>
+<style>
+    #content {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div id="loginForm">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="content">
+    <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+    function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Check if username and password match
+        // This is a basic example, you would typically send a request to a server for authentication
+        if (username === "queenpatel" && password === "queen") {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("content").style.display = "block";
+            document.getElementById("usernameDisplay").textContent = username;
+        } else {
+            alert("Invalid username or password");
+        }
+    }
+
+    function logout() {
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("content").style.display = "none";
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+    }
+</script>
+
+</body>
+</html>

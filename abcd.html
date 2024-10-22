@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <h1>Instagram</h1>
+    <input type="text"name="uname"id="uname"onblur="handleValidationName()"/>
+    <span id="error1"></span>
+    <br><br>
+    <input type="text"name="upass"id="upass"onblur="handleValidationPass()"/>
+    <span id="error2"></span>
+
+    <br /><br />
+    <button onclick="hi()">Log in</button>
+
+    <script>
+      function handleValidationName() {
+        let userNameData = document.getElementById("uname").value;
+        if (userNameData == "") {
+          console.log("Phone number, username, or email");
+          document.getElementById("error1").innerText =
+            "Phone number, username, or email";
+        } else {
+          console.log("Thanks For Valid User Name");
+          document.getElementById("error1").innerText = "";
+        }
+      }
+      function handleValidationPass() {
+        let userPassData = document.getElementById("upass").value;
+        if (userPassData == "") {
+          document.getElementById("error2").innerText =
+            "Password";
+        } else {
+          document.getElementById("error2").innerText = "";
+        }
+      }
+      function hi(){
+            const xyz=document.getElementById('h2')
+            xyz.style='color: red ;'
+      }
+
+    </script>
+  </body>
+</html>

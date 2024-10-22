@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+   <input type="text" name="uname" id="uname" onblur="handleValidationName(this,error1)">
+   <span id="error1"></span>
+   <br><br> 
+   <input type="text" name="upass" id="upass" onblur="handleValidationName(this,error2)">
+   <span id="error2"></span>
+   <br><br> 
+   <input type="text" name="uemail" id="uemail" onblur="handleValidationName(this,error3)">
+   <span id="error3"></span>
+   <br><br> 
+   <input type="text" name="umobile" id="umobile" onblur="handleValidationName(this,error4)">
+   <span id="error4"></span>
+   <br><br> 
+
+   <script>
+        function handleValidationName(a,b) {
+            // let userNameData = document.getElementById("uname").value;
+        if (a.value == "") {
+          console.log("Please Enter Valid User Name.");
+          b.innerHTML ="Please Enter Valid User Name.";
+        } 
+      }
+                                  
+
+   </script>
+</body>
+</html>

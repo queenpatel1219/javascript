@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a button</title>
+    
+</head>
+<body>
+    
+    <input type="text" name="" id="input1" placeholder="enter name of button">
+
+    <input type="text" id="input2" placeholder="enter color value">
+
+    <button onclick="function_my_button()">
+        create a button
+    </button>
+
+    <div id="mydiv">
+
+    </div>
+
+    <script>
+        console.log("hello i am creating a clickable button");
+    
+       function function_my_button()
+        {
+            let b=document.getElementById('input1');
+            for (let i = 0; i <=b.value; i++)
+             {
+                let a=document.createElement('button');
+                a.innerHTML="hello"+i;   
+                console.log(a);
+                let c=document.getElementById('mydiv');  //it is loop wise how much value you puted.
+                c.appendChild(a);
+            }
+
+            }
+
+            function function_my_button()
+             {
+                let a=document.getElementById('input1');  //it is dynamic means what text are you add on input.
+                let b=document.createElement('button');
+
+                b.innerText=a.value;
+                let c=document.getElementById('mydiv');
+                c.appendChild(b);
+                b.style.background= document.getElementById('input2').value;    
+            }
+    </script>
+</body>
+</html>

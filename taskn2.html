@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            color: rgb(172, 4, 32);
+            background-color: pink;
+            border: 1px solid rgb(172, 4, 32);
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div onmousemove="myMoveFunction()">
+        <p>onmousemove</p>
+        <p id="demo1">Mouse over me!</p>
+    </div>
+
+    <div onmouseenter="myEnterFunction()">
+        <p>onmousemove</p>
+        <p id="demo2">Mouse over me!</p>
+    </div>
+    
+    <div onmouseover="myOverFunction()">
+        <p>onmousemove</p>
+        <p id="demo3">Mouse over me!</p>
+    </div>
+
+
+    <script>
+        let x = 0;
+        let y = 0;
+        let z = 0;
+
+        function myMoveFunction() {
+            document.getElementById("demo1").innerHTML = z+=1;
+        }
+        function myEnterFunction() {
+            document.getElementById("demo2").innerHTML = x+=1;
+        }
+        function myOverFunction() {
+            document.getElementById("demo3").innerHTML = y+=1;
+        }
+
+    </script>
+
+</body>
+</html>

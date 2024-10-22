@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onmouseover Event</h2>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="../../HTML_CSS/Images/emoji1.jpeg" alt="Smiley" width="32" height="32">
+
+
+<script>
+function bigImg(x) {
+  x.style.height = "100px";
+  x.style.width = "100px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+</body>
+</html>
